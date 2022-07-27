@@ -144,8 +144,8 @@ timeseries_ns(1:3,:)=[];  % Delete voxel references
 % DON'T Transpose timeseries_ns (01/23/2022)
 
 %% SLICEWISE PCA
-% n Rows should be predictor variables (TIME POINTS)
-% p Columns should be observation/sample (VOXELS)
+% n Rows should be observations/samples (TIME POINTS)
+% p Columns should be predictor variables (VOXELS)
 % timeseries_ns: n x p ---- TIME POINTS x VOXELS
 % [coeff,score,latent,tsquared,explained,mu]=pca(timeseries_ns);
 % coeff: loadings
@@ -161,7 +161,7 @@ for slice_num=0:dim.z-1
     sliceVoxelDir{slice_num+1}=voxelDir(:,idx);
     slice=timeseries_ns(:,idx);
     [coeff{slice_num+1},score{slice_num+1},latent{slice_num+1},~,explained{slice_num+1},~]=...
-        pca(slice,'Algorithm','eig','Economy',true);
+        pca(slice,'Algorithm','svd','Economy',true);
 end
 
 %% Visualize PCs and task vectors from a middle slice
