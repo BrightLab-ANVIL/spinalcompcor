@@ -5,7 +5,7 @@ Repository for code accompanying the manuscript (preprint) available here: (link
 ---
 
 [![Twitter URL](https://img.shields.io/twitter/follow/KJHemm?style=social)](https://x.com/KJHemm)
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/BrightLab-ANVIL/spinalcompcor/blob/main/LICENSE)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/BrightLab-ANVIL/spinalcompcor/blob/main/LICENSE)
 <br>
 
 ### Guide to this repository:
